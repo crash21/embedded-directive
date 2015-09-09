@@ -13,9 +13,7 @@
             return {
                 restrict: 'EA',
                 replace: true,
-                scope: {
-                    'routeName': '@',
-                },
+                scope: {},
                 templateUrl: "directive.html",
                 link: function (scope, elements, attrs) {
                     scope.grid = {
