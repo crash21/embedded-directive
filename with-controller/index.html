@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>With Controller</title>
+    <link rel="stylesheet" type="text/css" href="../assets/handsontable.css"/>
+    <script rel="script" type="text/javascript" src="../assets/jquery.js"></script>
+    <script rel="script" type="text/javascript" src="../assets/angular/angular.js"></script>
+    <script rel="script" type="text/javascript" src="../assets/handsontable.full.js"></script>
+    <script rel="script" type="text/javascript" src="../assets/ngHandsontable.js"></script>
+    <script rel="script" type="text/javascript" src="app.js"></script>
+</head>
+<body style="width: 500px; margin:0 auto;">
+    <div>
+        <div id="grid" style="margin:20px 0 20px;" data-ng-controller="MainCtrl">
+            <div>[[grid.data]]</div>
+            <hot-table style="width: 100%;overflow: auto" data-settings="{contextMenu: true, stretchH: 'all', afterChange: updateChart }" data-rowHeaders="true" data-minSpareRows="grid.minSpareRows" data-datarows="grid.data" data-columns="grid.columns" height="grid.getHeight"></hot-table>
+        </div>
+    </div>
+</body>
+</html>
