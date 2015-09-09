@@ -16,7 +16,7 @@
                 scope: {
                     'routeName': '@',
                 },
-                template: '<div class="col-md-4"><div><div id="grid" style="margin:20px 0 20px;"><div>[[grid.data]]</div> <hot-table style="width: 100%;overflow: auto" data-settings="{contextMenu: true, stretchH: \'all\',  afterChange: updateChart }" data-rowHeaders="true" data-minSpareRows="grid.minSpareRows"  data-datarows="grid.data" data-columns="grid.columns" height="grid.getHeight"></hot-table></div></div></div>',
+                templateUrl: "directive.html",
                 link: function (scope, elements, attrs) {
                     scope.grid = {
                         data: [{
